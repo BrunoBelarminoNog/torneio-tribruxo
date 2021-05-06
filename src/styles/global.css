@@ -49,6 +49,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 @font-face {
 	font-family: HarryPotter;
 	src: url("../assets/fonts/HARRYP__.TTF");
@@ -57,3 +58,33 @@ table {
 h1 {
 	font-family: HarryPotter;
 }
+
+html {
+	font-size: 50%;
+}
+
+
+@media screen and (min-width: 360px) {
+	html {
+		font-size: 60%;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	html {
+		font-size: 70%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	html {
+		font-size: 80%;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	html {
+		font-size: 90%;
+	}
+}
+

@@ -5,7 +5,7 @@ import "./style.css"
 class Student extends Component {
 
     render() { 
-        const {name, image, house, ancestry} = this.props.student
+        const {name, image, house, alive} = this.props.student
 
         return(
             <div className="student-container">
@@ -15,7 +15,7 @@ class Student extends Component {
                 <div className="students-infos">
                     <h4>{name}</h4>
                     <p>{house}</p>
-                    <p>{ancestry}</p>
+                    <p>{alive ? "Alive" : "Dead" }</p>
                 </div>
             </div>
         )
