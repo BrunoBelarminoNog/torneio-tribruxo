@@ -1,16 +1,20 @@
 import { Component } from "react";
+import {TweenLite} from 'gsap';
 import Background from "./components/Background";
-import Button from "./components/Button";
+import Intro from "./components/Introduction";
 import StudentsList from "./components/StudentsList";
 import "./styles/App.css";
+import Home from "./components/Home";
 
 class App extends Component {
   state = {
     allStudents: [],
-    intro: true,
+    intro: false,
     playTournament: false,
     studentsSorted: [],
+    start: false,
   };
+
 
   componentDidMount() {
     this.getApi();
@@ -28,7 +32,11 @@ class App extends Component {
 
   handleStudentsSorted = () => {
     const { allStudents } = this.state;
-    console.log(allStudents);
+
+    if(allStudents.length === 0) {
+      return
+    }
+
     let studentsSorted = [];
     sorted();
 
@@ -38,23 +46,23 @@ class App extends Component {
       if (studentsSorted.length === 0) {
         studentsSorted.push(allStudents[randomNumber]);
         console.log(studentsSorted);
-        sorted()
+        sorted();
       }
 
-      let student = allStudents[randomNumber]
+      let student = allStudents[randomNumber];
 
-      if(!studentsSorted.includes(student)) {
-        let control = false
-        studentsSorted.map(el => {
-          if(student.house === el.house) {
+      if (!studentsSorted.includes(student)) {
+        let control = false;
+        studentsSorted.forEach((el) => {
+          if (student.house === el.house) {
             control = true;
-          } 
-        })
+          }
+        });
 
-        control ? sorted() : studentsSorted.push(student)
-      } 
+        control ? sorted() : studentsSorted.push(student);
+      }
 
-      if(studentsSorted.length < 3) sorted()
+      if (studentsSorted.length < 3) sorted();
     }
 
     this.setState({
@@ -72,33 +80,48 @@ class App extends Component {
     this.setState({ playTournament: !playTournament });
   };
 
+  handleIntroStart = () => {
+    const { start } = this.state;
+
+    this.setState({ start: !start });
+
+
+    setTimeout(() => {
+      this.setState({ intro: true });
+    }, 6000)
+
+    console.log("start");
+  };
+
   render() {
-    const { playTournament, studentsSorted } = this.state;
+    const { playTournament, studentsSorted, intro, start } = this.state;
 
     return (
       <main className="App">
-        
-
-
-        {playTournament ? (
-          <StudentsList
-            funcBackPlayTournament={this.handlePlayTournament}
-            studentsSorted={studentsSorted}
-          />
-        ) : (
-          <div>
-            <h1>Torneio TriBruxo</h1>
-            <section className="tournament_container">
-              <h2>Clique no botão para encontrar os feiticeiros!</h2>
-              <Button
-                title="Começar"
-                funcHandleState={this.handlePlayTournament}
-              />
-            </section>
+        {!start ? (
+          <div className="intro-container">
+            <Intro funcHandleIntroStart={this.handleIntroStart} start={start} />
           </div>
+        ) : (
+          <>
+              {
+                intro && (
+                  <>
+                  {playTournament ? (
+                    <StudentsList
+                      funcBackPlayTournament={this.handlePlayTournament}
+                      studentsSorted={studentsSorted}
+                    />
+                  ) : (
+                    <Home funcHandlePlayTournament={this.handlePlayTournament} />
+                  )}
+                  </>
+                )
+              }
+              
+            <Background start={start} />
+          </>
         )}
-
-        <Background />
       </main>
     );
   }

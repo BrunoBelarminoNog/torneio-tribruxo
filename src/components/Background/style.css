@@ -3,13 +3,35 @@
     height: 100vh;
     overflow: hidden;
     position: absolute;
-    background-color: #3E4777;
-    background-image: linear-gradient(to bottom, #2a3050, #4c5893);
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+
+
+.wrapper-background::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3E4777;
+    background-image: linear-gradient(to bottom, #2a3050, #4c5893);
+    animation: back 3s infinite forwards alternate-reverse;
+}
+
+@keyframes back {
+    from {
+        filter: contrast(1);
+    } 
+    to {
+        filter: contrast(1.1);
+    }
 }
 
 .wrapper-background svg {

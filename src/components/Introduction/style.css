@@ -1,0 +1,20 @@
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction h2 {
+    font-size: 1.5rem;
+    color: #f6f6f6;
+    text-shadow: 3px 3px 10px black, -3px -3px 10px black;
+    margin-bottom: 1rem;
+}
+
+.introduction-icon {
+    color: #f6f6f6;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 10px black, -3px -3px 10px black;
+    font-size: 2rem;
+}
