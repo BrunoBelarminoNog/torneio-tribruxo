@@ -1,0 +1,19 @@
+.button-container {
+    min-width: 250px;
+    min-height: 70px;
+    background: url("../../assets/images/button.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #f6f6f6;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px #000;
+    transition: filter 300ms;
+}
+
+.button-container:hover {
+    filter: contrast(1.5);
+}

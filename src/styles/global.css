@@ -19,10 +19,12 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-  outline: 0;
+  	outline: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Playfair Display', serif;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -49,7 +51,7 @@ table {
 }
 @font-face {
 	font-family: HarryPotter;
-	src: url("../assets/HARRYP__.TTF");
+	src: url("../assets/fonts/HARRYP__.TTF");
 }
 
 h1 {
