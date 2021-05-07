@@ -14,8 +14,7 @@ class CharactersList extends Component {
   };
 
   componentDidMount() {
-    const {characters} = this.state;
-    
+
 
     setTimeout(() => {
       gsap.to(this.myCharacters, {
@@ -39,7 +38,6 @@ class CharactersList extends Component {
   }
 
   componentDidUpdate() {
-    const {characters} = this.state;
 
     
     gsap.set(this.myCharacters, {opacity: 0, translateY: 50})
