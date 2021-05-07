@@ -1,5 +1,4 @@
 import { Component } from "react";
-import {TweenLite} from 'gsap';
 import Background from "./components/Background";
 import Intro from "./components/Introduction";
 import StudentsList from "./components/StudentsList";

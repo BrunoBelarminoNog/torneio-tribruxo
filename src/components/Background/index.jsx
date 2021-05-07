@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {TimelineLite, TweenLite} from 'gsap';
+import {TimelineLite} from 'gsap';
  
 import "./style.css";
 
