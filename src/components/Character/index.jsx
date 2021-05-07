@@ -2,10 +2,10 @@ import { Component } from "react";
 
 import "./style.css"
 
-class Student extends Component {
+class Character extends Component {
 
     render() { 
-        const {name, image, house, alive} = this.props.student
+        const {name, image, house, alive} = this.props.character
 
         return(
             <div className="student-container">
@@ -22,4 +22,4 @@ class Student extends Component {
     }
 }
 
-export default Student;
+export default Character;

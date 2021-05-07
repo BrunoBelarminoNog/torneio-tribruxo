@@ -17,6 +17,18 @@
     height: 240px;
     object-fit: cover;
     z-index: 3;
+    animation: enterImage .5s forwards ease-in-out;
+}
+
+@keyframes enterImage {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .student-image::before {
@@ -32,6 +44,23 @@
     right: 0;
     bottom: 0;
     z-index: 4;
+}
+
+.student-image::after {
+    content: "";
+    width: 160px;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url("../../assets/images/giphy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
 }
 
 .students-infos {

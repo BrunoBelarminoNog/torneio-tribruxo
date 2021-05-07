@@ -1,0 +1,64 @@
+section.characters-container {
+    width: 80vw;
+    max-width: 980px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.filters-container {
+    position: relative;
+    z-index: 4;
+}
+
+section.characters-container .filters-characters {
+    position: relative;
+    z-index: 4;
+}
+
+section.characters-container .filters-characters ul {
+    list-style: none;
+    display: flex;
+    gap: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+section.characters-container .filters-characters ul li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f6f6f6;
+    text-shadow: 3px 3px  5px #000, -3px -3px 5px #000, 3px -3px 5px #000, -3px 3px 5px #000;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+section.characters-container .filters-characters ul li.filter-active {
+    color: #bb8649;
+}
+
+section.characters-container .filters-characters ul li:hover {
+    transform: scale(1.2);
+}
+
+section.characters-container h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+section.characters-container .studentsList-container {
+    width: 90vw;
+    max-width: 980px;
+
+}
+
+section.characters-container .studentsList-container div{
+    max-width: 980px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+}
+
+section.characters-container .studentsList-container div .student-container {
+    margin-bottom: 1rem;
+}

@@ -8,7 +8,6 @@ class Background extends Component {
   constructor(props) {
     super(props)
 
-    // this.introTl = new TimelineLite()
     this.background = null
     this.moon = []
     this.castle = []
@@ -16,10 +15,6 @@ class Background extends Component {
     this.three = []
     this.cloud = []
 
-  }
-
-  state = {
-    start: false
   }
 
   componentDidMount() {
@@ -56,12 +51,6 @@ class Background extends Component {
       .from(this.moon[0], {duration: 3,alpha: 0}, '-=2.9')
       .fromTo(this.moon[0], {filter:'brightness(.5)'}, {filter:'brightness(1.2)', duration: 4, yoyoEase: true, repeat: -1}, '<')
   }
-
-
-  handleState = () => {
-    this.setState({start: true})
-  }
-
 
   render() {
     return (

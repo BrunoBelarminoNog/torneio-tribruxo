@@ -1,6 +1,6 @@
 .studentsList-container{
     width: 95vw;
-    max-width: 700px;
+    max-width: 780px;
 
     position: relative;
     z-index: 5;
@@ -15,5 +15,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
 
+.studentsList-container .div-animation {
+    opacity: 0;
+    transform: translateY(50px);
+} 
+
+.studentsList-container .buttons {
+    margin-top: 1rem;
+    justify-content: space-around;
 }

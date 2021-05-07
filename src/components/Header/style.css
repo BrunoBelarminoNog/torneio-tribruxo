@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    width: 100vw;
+    height: 80px;
+    border-bottom: 3px solid #f6f6f6;
+    /* background-color: #000000be; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-container {
+    width: 80vw;
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #f6f6f6;
+	font-family: HarryPotter;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: .2rem;
+    border-bottom: 1px solid transparent;
+    transition: all 300ms;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #f6f6f6;
+}
+
+nav .active {
+    font-weight: 700;
+}
