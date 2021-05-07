@@ -12,11 +12,11 @@ class Header extends Component {
   componentDidMount() {
     gsap.timeline()
       .from(this.myHeader, {duration: 1, translateX: -2000})
-      .to(this.myHeader, {duration: 1, backgroundColor: "#000000be"})
+      .to(this.myHeader, {duration: 1, backgroundColor: "#000000be"}, "-=.2")
       .from(this.myLogo, {duration: 1, opacity: 0})
       .from(this.myNav, {duration: 1.5, translateY: -400, stagger: {
         amount: .5
-      }}, "-=2")
+      }}, "-=2.5")
   }
 
   render() {

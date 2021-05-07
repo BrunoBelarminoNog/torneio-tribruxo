@@ -15,13 +15,12 @@ class CharactersList extends Component {
 
   componentDidMount() {
 
-
     setTimeout(() => {
       gsap.to(this.myCharacters, {
         translateY: 0,
         opacity: 1,
         stagger: {
-          amount: 1,
+          amount: .6,
         },
         delay: 0,
       });
@@ -39,14 +38,14 @@ class CharactersList extends Component {
 
   componentDidUpdate() {
 
-    
     gsap.set(this.myCharacters, {opacity: 0, translateY: 50})
     setTimeout(() => {
+
       gsap.to(this.myCharacters, {
         translateY: 0,
         opacity: 1,
         stagger: {
-          amount: 1,
+          amount: .6,
         },
       });
     }, 1000);
