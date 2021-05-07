@@ -25,14 +25,7 @@
     animation: back 3s infinite forwards alternate-reverse;
 }
 
-@keyframes back {
-    from {
-        filter: contrast(1);
-    } 
-    to {
-        filter: contrast(1.1);
-    }
-}
+
 
 .wrapper-background svg {
     min-width: 100%;

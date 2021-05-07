@@ -19,9 +19,7 @@
     font-size: 2rem;
 }
 
-.introduction button {
+.introduction p {
     font-family: HarryPotter;
-    font-size: 2rem;
-    letter-spacing: .1rem;
-    padding-top: 7px;
+    opacity: 0;
 }

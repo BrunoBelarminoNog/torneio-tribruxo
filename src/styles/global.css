@@ -124,3 +124,12 @@ a {
 	align-items: center;
 	justify-content: center;
 }
+
+@keyframes back {
+    from {
+        filter: contrast(1);
+    } 
+    to {
+        filter: contrast(1.2);
+    }
+}

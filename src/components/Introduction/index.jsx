@@ -35,11 +35,11 @@ class Intro extends Component {
     }
 
     render() {
-
         return(
             <div className="introduction" ref={div => this.myDiv = div}>
                 <h2>Para melhor experiência use fone de ouvido</h2>
                 <IoHeadsetSharp className="introduction-icon" />
+                <p>-</p>
                 <Button title="Entrar" funcHandleState={this.handleSate} />
             </div>
         )
