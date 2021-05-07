@@ -1,6 +1,6 @@
 import { Component } from "react";
 import {IoHeadsetSharp} from 'react-icons/io5'
-import {TweenLite} from  'gsap';
+import {gsap} from  'gsap';
 
 import Button from "../Button";
 
@@ -20,7 +20,7 @@ class Intro extends Component {
 
     componentDidUpdate(_, prevState) {
         if(this.state.start === true) {
-            TweenLite.to(this.myDiv, {duration: 2, alpha: 0})
+            gsap.to(this.myDiv, {duration: 2, alpha: 0})
         }
     }
 

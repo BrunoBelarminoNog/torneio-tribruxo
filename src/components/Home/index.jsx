@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { TimelineLite } from 'gsap';
+import { gsap } from 'gsap';
 import Button from '../Button'
 
 import "./style.css"
@@ -8,13 +8,12 @@ class Home extends Component {
     constructor(props) {
         super(props)
     
-        this.introTl = new TimelineLite()
         this.initialDiv = null
     }
 
   componentDidMount() {
-    this.introTl
-        .from(this.initialDiv, {opacity: 0, duration: 1})
+    gsap
+        .from(this.initialDiv, {opacity: 0, duration: 1, delay: .25})
   }
 
   render() {

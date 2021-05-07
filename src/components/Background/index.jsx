@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {TimelineLite} from 'gsap';
+import {gsap} from 'gsap';
  
 import "./style.css";
 
@@ -8,7 +8,7 @@ class Background extends Component {
   constructor(props) {
     super(props)
 
-    this.introTl = new TimelineLite()
+    // this.introTl = new TimelineLite()
     this.background = null
     this.moon = []
     this.castle = []
@@ -24,36 +24,36 @@ class Background extends Component {
 
   componentDidMount() {
 
-    this.introTl
+    gsap.timeline()
       .from(this.castle[0], {duration: 3, y: 800})
-      .from(this.castle[1], 3, {y: 800}, "<")
-      .from(this.castle[2], 3, {y: 800}, "<")
-      .from(this.windows[1], 3, {y: 800}, "<")
+      .from(this.castle[1], {duration: 3,y: 800}, "<")
+      .from(this.castle[2], {duration: 3,y: 800}, "<")
+      .from(this.windows[1], {duration: 3,y: 800}, "<")
   
-      .from(this.castle[3], 3, {y: 800}, "-=2")
-      .from(this.castle[4], 3, {y: 800}, "<")
-      .from(this.castle[5], 3, {y: 800}, "<")
-      .from(this.castle[6], 3, {y: 800}, "<")
-      .from(this.castle[7], 3, {y: 800}, "<")
-      .from(this.castle[8], 3, {y: 800}, "<")
-      .from(this.windows[0], 3, {y: 800}, "<")
+      .from(this.castle[3], {duration: 3,y: 800}, "-=2")
+      .from(this.castle[4], {duration: 3,y: 800}, "<")
+      .from(this.castle[5], {duration: 3,y: 800}, "<")
+      .from(this.castle[6], {duration: 3,y: 800}, "<")
+      .from(this.castle[7], {duration: 3,y: 800}, "<")
+      .from(this.castle[8], {duration: 3,y: 800}, "<")
+      .from(this.windows[0], {duration: 3,y: 800}, "<")
   
-      .from(this.cloud[1], 2, {x: 2000, alpha: 0}, "-=2")
-      .from(this.cloud[0], 2, {x: -2000, alpha: 0}, "-=2.5")
+      .from(this.cloud[1], {duration: 2, x: 2000, alpha: 0}, "-=2")
+      .from(this.cloud[0], {duration: 2, x: -2000, alpha: 0}, "-=2.5")
   
-      .from(this.three[0], 2, {y: 400, rotate: -25}, '-=1')
-      .from(this.three[1], 2, {y: 400, x: 200, rotate: -25}, "<")
-      .from(this.three[2], 2, {y: 400, x: 200, rotate: 25}, "<")
-      .from(this.three[3], 2, {y: 400, x: 200, rotate: 25}, "<")
-      .from(this.three[4], 2, {y: 400, x: 200, rotate: 25}, "<")
+      .from(this.three[0], {duration: 2, y: 400, rotate: -25}, '-=1')
+      .from(this.three[1], {duration: 2, y: 400, x: 200, rotate: -25}, "<")
+      .from(this.three[2], {duration: 2, y: 400, x: 200, rotate: 25}, "<")
+      .from(this.three[3], {duration: 2, y: 400, x: 200, rotate: 25}, "<")
+      .from(this.three[4], {duration: 2, y: 400, x: 200, rotate: 25}, "<")
   
-      .from(this.moon[2], 3, {x: 1000, y: -100,alpha: 0}, "-=.5")
-      .from(this.moon[3], 3, {x: 1000, y: -100,alpha: 0}, "-=2.94")
-      .from(this.moon[4], 3, {x: 1010, y: -200,alpha: 0, scale: .9}, "<")
-      .from(this.moon[5], 3, {x: 1000, y: -100,alpha: 0}, "<")
-      .from(this.moon[6], 3, {x: 1000, y: -200,alpha: 0, scale: .9}, "<")
-      .from(this.moon[1], 3, { alpha: 0})
-      .from(this.moon[0], 3, {alpha: 0}, '-=2.9')
+      .from(this.moon[2], {duration: 3,x: 1000, y: -100,alpha: 0}, "-=.5")
+      .from(this.moon[3], {duration: 3,x: 1000, y: -100,alpha: 0}, "-=2.94")
+      .from(this.moon[4], {duration: 3,x: 1010, y: -200,alpha: 0, scale: .9}, "<")
+      .from(this.moon[5], {duration: 3,x: 1000, y: -100,alpha: 0}, "<")
+      .from(this.moon[6], {duration: 3,x: 1000, y: -200,alpha: 0, scale: .9}, "<")
+      .from(this.moon[1], {duration: 3, alpha: 0})
+      .from(this.moon[0], {duration: 3,alpha: 0}, '-=2.9')
       .fromTo(this.moon[0], {filter:'brightness(.5)'}, {filter:'brightness(1.2)', duration: 4, yoyoEase: true, repeat: -1}, '<')
   }
 
