@@ -55,10 +55,9 @@ section.characters-container .studentsList-container {
 section.characters-container .studentsList-container div{
     max-width: 980px;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
     justify-content: space-evenly;
 }
 
 section.characters-container .studentsList-container div .student-container {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
