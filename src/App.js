@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   getApi = () => {
-    fetch("http://hp-api.herokuapp.com/api/characters/students")
+    fetch("https://hp-api.herokuapp.com/api/characters/students")
       .then((res) => res.json())
       .then((data) => {
         this.setState({ allStudents: data });
