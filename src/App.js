@@ -1,9 +1,13 @@
 import { Component } from "react";
+
 import Background from "./components/Background";
 import Intro from "./components/Introduction";
 import StudentsList from "./components/StudentsList";
-import "./styles/App.css";
 import Home from "./components/Home";
+
+import "./styles/App.css";
+
+import ThemeSong from "./assets/audio/themesong.mp3";
 
 class App extends Component {
   state = {
@@ -14,6 +18,7 @@ class App extends Component {
     start: false,
   };
 
+  myAudio = null;
 
   componentDidMount() {
     this.getApi();
@@ -32,8 +37,8 @@ class App extends Component {
   handleStudentsSorted = () => {
     const { allStudents } = this.state;
 
-    if(allStudents.length === 0) {
-      return
+    if (allStudents.length === 0) {
+      return;
     }
 
     let studentsSorted = [];
@@ -83,11 +88,11 @@ class App extends Component {
     const { start } = this.state;
 
     this.setState({ start: !start });
-
+    // this.myAudio.play()
 
     setTimeout(() => {
       this.setState({ intro: true });
-    }, 6000)
+    }, 6000);
 
     console.log("start");
   };
@@ -103,21 +108,19 @@ class App extends Component {
           </div>
         ) : (
           <>
-              {
-                intro && (
-                  <>
-                  {playTournament ? (
-                    <StudentsList
-                      funcBackPlayTournament={this.handlePlayTournament}
-                      studentsSorted={studentsSorted}
-                    />
-                  ) : (
-                    <Home funcHandlePlayTournament={this.handlePlayTournament} />
-                  )}
-                  </>
-                )
-              }
-              
+            {intro && (
+              <>
+                {playTournament ? (
+                  <StudentsList
+                    funcBackPlayTournament={this.handlePlayTournament}
+                    studentsSorted={studentsSorted}
+                  />
+                ) : (
+                  <Home funcHandlePlayTournament={this.handlePlayTournament} />
+                )}
+              </>
+            )}
+            <audio src={ThemeSong} type="audio/mp3" autoPlay={true} />
             <Background start={start} />
           </>
         )}
