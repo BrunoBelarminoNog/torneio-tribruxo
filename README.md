@@ -38,7 +38,7 @@ O Torneio TriBruxo é um projeto realizado com a intenção de treinar mais sobr
 
 Nele consultamos um API pública do Harry Potter, e fazemos uma brincadeira com o tema Torneio TriBruxo, presente na série, sorteando aleatoriamente três alunos sempre de diferentes casas para disputar o torneio. 
 
-**O Foodfy é o projeto realizado dentro do curso de desenvolvimento full-stack da Kenzie Academy Brasil.**
+**O Torneio TriBruxo é um projeto realizado dentro do curso de desenvolvimento full-stack da Kenzie Academy Brasil.**
 
 <br>
 
