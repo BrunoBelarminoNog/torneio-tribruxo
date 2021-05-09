@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Launchbase" src="./src/assets/images/torneiotribruxo-home.png" width="400px" />
+  <img alt="Torneio TriBruxo" src="./src/assets/images/torneiotribruxo-home.png" />
 </p>
 <br>
 <hr>
