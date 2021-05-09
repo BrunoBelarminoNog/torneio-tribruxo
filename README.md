@@ -87,7 +87,7 @@ yarn start || npm start
 
 <br />
 <p align="center">
-  <img src="./src/assets/images/home.gif" />
+  <img src="./src/assets/images/home.gif" width="500px"/>
 </p>
 <br />
 
