@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Launchbase" src="./src/assets/images/torneiotribruxo-home.png" width="400px" />
+</p>
+<br>
+<hr>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align="center">
+  Projeto: Torneio TriBruxo
+</h2>
+<br>
 
-## Available Scripts
+<blockquote align="center">“Algumas pessoas sonham com o sucesso. Enquanto isso outras acordam e trabalham duro para isso.”
 
-In the project directory, you can run:
+(Mark Zuckerberg)</blockquote>
+<br>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <a href="LICENSE">
+    <img alt="LICENSE" src="https://img.shields.io/npm/l/express">
+  </a>
+  <a href="NPM">
+    <img alt="NPM" src="https://img.shields.io/npm/v/npm">
+  </a>
+  <a href="GitHub followers">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/BrunoBelarminoNog?style=social">
+  </a>
+</p>
+<hr>
+<br>
+<br>
 
-### `yarn test`
+# :rocket: Sobre o projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O Torneio TriBruxo é um projeto realizado com a intenção de treinar mais sobre a construção de aplicações em ReactJS, o consumo de APIs externas e animações avançadas com uso de Greensock. 
 
-### `yarn build`
+Nele consultamos um API pública do Harry Potter, e fazemos uma brincadeira com o tema Torneio TriBruxo, presente na série, sorteando aleatoriamente três alunos sempre de diferentes casas para disputar o torneio. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**O Foodfy é o projeto realizado dentro do curso de desenvolvimento full-stack da Kenzie Academy Brasil.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :computer: Tecnologias utilizadas
+A seguinte stack foi utilizada na construção do projeto:
 
-### `yarn eject`
+- ReactJS
+- APIs
+- GreenSock
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :construction_worker: Instalação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Primeiramente você precisa ter instalado o [Node.js](https://nodejs.org/en/download/), depois efetuar o clone deste repositório a partir do seguinte comando:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+git clone https://github.com/BrunoBelarminoNog/torneio-tribruxo.git
+```
 
-## Learn More
+URLs SSH fornecem acesso a um repositório Git via SSH, um protocolo seguro. Se você tiver uma chave SSH registrada em
+sua conta do Github, clone o projeto usando este comando:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git clone git@github.com:BrunoBelarminoNog/torneio-tribruxo.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Instale as dependências**
 
-### Code Splitting
+```
+yarn || npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+**Inicie o servidor**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+yarn start || npm start
+```
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<br>
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# :art: Layout
 
-### Deployment
+<br />
+<p align="center">
+  <img src="./src/assets/images/home.gif" />
+</p>
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# :pushpin: Contribuindo
+
+Sinta-se à vontade para registrar um novo problema com o respectivo título e descrição no repositório Foodfy . Se você já encontrou uma solução para o problema, eu adoraria revisar sua solicitação de pull!
+
+Verifique a página de contribuição para ver os melhores lugares para registrar problemas, iniciar discussões e começar a contribuir.
+
+
+# :unlock: Licença
+Lançado em 2020. Este projeto está sob a licença do MIT .
+
+Feito com muita dedicação por Bruno Belarmino :zap:
+
+Me siga nas redes! [LinkdIn](https://www.linkedin.com/in/bruno-belarmino-nog/)
