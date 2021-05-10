@@ -95,13 +95,13 @@ yarn start || npm start
 
 # :pushpin: Contribuindo
 
-Sinta-se à vontade para registrar um novo problema com o respectivo título e descrição no repositório Foodfy . Se você já encontrou uma solução para o problema, eu adoraria revisar sua solicitação de pull!
+Sinta-se à vontade para registrar um novo problema com o respectivo título e descrição no repositório Torneio TriBruxo . Se você já encontrou uma solução para o problema, eu adoraria revisar sua solicitação de pull!
 
 Verifique a página de contribuição para ver os melhores lugares para registrar problemas, iniciar discussões e começar a contribuir.
 
 
 # :unlock: Licença
-Lançado em 2020. Este projeto está sob a licença do MIT .
+Lançado em 2021. Este projeto está sob a licença do MIT .
 
 Feito com muita dedicação por Bruno Belarmino :zap:
 
